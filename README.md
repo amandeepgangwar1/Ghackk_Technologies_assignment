@@ -1,0 +1,2 @@
+# Ghackk_Technologies_assignment
+Intern
