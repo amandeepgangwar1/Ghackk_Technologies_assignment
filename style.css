@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3c3c3c; /* Dark background for navbar */
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e6e6e6; /* Lighter shade on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Position relative for child absolute positioning */
+    height: 400px; /* Height of the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(10, 1, 1);
+    overflow: hidden; /* Hide any overflow from the pseudo-element */
+}
+
+.hero::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position absolutely to cover the hero section */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background-image: url('WhatsApp Image 2024-10-10 at 13.33.12_1ba7719e.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    opacity: 0.5; /* Set 50% opacity */
+    z-index: 1; /* Ensure it is below the content */
+}
+
+.hero-content {
+    position: relative; /* Position content above the background */
+    z-index: 2; /* Ensure content is above the background */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.cta-button {
+    background-color: #ff5722; /* CTA button color */
+    color: white;
+    padding: 5px 20px; /* Correct padding (10px vertical, 20px horizontal) */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Add margin-top to push the button away from the text */
+}
+
+
+
+/* Main Characters Section */
+#characters {
+    text-align: center; /* Center the section title */
+    padding: 50px 20px; /* Add padding to the section */
+    background-image: url('your-background-image.jpg'); /* Set a background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    opacity: 0.; /* Set 50% opacity for the background */
+}
+
+.character-grid {
+    display: flex; /* Use flexbox for character layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the items */
+    margin: 0 auto; /* Center the grid within the section */
+    max-width: 1200px; /* Set a max width for better layout */
+}
+
+.character {
+    margin: 10px; /* Space between character items */
+    text-align: center; /* Center text under images */
+    flex: 0 0 30%; /* Set width for each character item to fit 3 per row */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.character img {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Set a max width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.details {
+    margin-top: 5px; /* Space between image and text */
+    color: brown; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding: 20px; /* Padding */
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Max width of image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.close {
+    position: absolute; /* Position the close button */
+    top: 10px;
+    right: 25px;
+    color: white; /* Close button color */
+    font-size: 35px; /* Font size */
+    font-weight: bold; /* Font weight */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.lightbox-caption {
+    margin: auto;
+    display: block;
+    text-align: center; /* Center the caption */
+    color: white; /* Caption color */
+    padding: 10px 20px; /* Padding for caption */
+}
+.lightbox-details {
+    color: white; /* Text color */
+    font-size: 28px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Italic text */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above text */
+}
+
+/* Carousel Section */
+#manhwa-carousel {
+    padding: 50px 20px;
+    text-align: center; /* Center text in carousel section */
+}
+
+.carousel {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: center; /* Center carousel items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px 0; /* Padding for carousel section */
+}
+
+.carousel-item {
+    position: relative; /* Positioning for overlay text */
+    margin: 0 10px; /* Space between carousel items */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.carousel img {
+    width: 200px; /* Fixed width for carousel images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.carousel-text {
+    color: brown; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 5px; /* Space between image and text */
+}
+
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hide lightbox initially */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 80%; /* Max width for lightbox image */
+    max-height: 80%; /* Max height for lightbox image */
+    border-radius: 10px; /* Rounded corners for lightbox images */
+}
+
+.lightbox-details {
+    color: brown; /* Brown color for text */
+    font-size: 28px; /* Text size */
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Italic text */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above text */
+}
+
+.close {
+    color: white; /* Color for close button */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff; /* White background for contact section */
+    text-align: center;
+}

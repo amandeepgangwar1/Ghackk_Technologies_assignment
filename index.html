@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore Olympus Webtoon Landing Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>Lore Olympus</h1>
+            <ul>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#manhwa-carousel">Manhwas</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <br><h1>Jaw Dropping Scenes on Media</h1></br>
+            <a href="#characters" class="cta-button">Read More</a>
+        </div>
+    </header>
+    <section id="characters">
+        <h2>Main Characters</h2>
+        <div class="character-grid">
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_8c45208f.jpg" alt="Character 1" loading="lazy" onclick="openLightbox(this)" data-detail="Noblesse is a title only given to the strongest vampire.">
+                <div class="details">Noblesse: The strongest vampire in a supernatural world.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_3403c1fb.jpg" alt="Character 2" loading="lazy" onclick="openLightbox(this)" data-detail="Bota is a skilled warrior known for their bravery in battle.">
+                <div class="details">Bota: A brave warrior known for their skills.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_5669c1f5.jpg" alt="Character 3" loading="lazy" onclick="openLightbox(this)" data-detail="Kim Yuwon is a cunning strategist and advisor to the king.">
+                <div class="details">Kim Yuwan: A cunning strategist and royal advisor.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_408486ad.jpg" alt="Character 4" loading="lazy" onclick="openLightbox(this)" data-detail="Baam is a powerful mage, controlling the elements with ease.">
+                <div class="details">Baam: A powerful mage who controls the elements.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_a6069304.jpg" alt="Character 5" loading="lazy" onclick="openLightbox(this)" data-detail="Lima is a mysterious figure with unknown origins.">
+                <div class="details">Lima: A mysterious figure with unknown origins.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_b9556653.jpg" alt="Character 6" loading="lazy" onclick="openLightbox(this)" data-detail="Kang is a healer, known for their kindness and magical abilities.">
+                <div class="details">Kang: A healer with magical abilities.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_cd66334a.jpg" alt="Character 7" loading="lazy" onclick="openLightbox(this)" data-detail="Jeon is a fierce protector, defending the weak and fighting for justice.">
+                <div class="details">Jeon: A fierce protector of the weak.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_d2c25c67.jpg" alt="Character 8" loading="lazy" onclick="openLightbox(this)" data-detail="Dongtae is a scholar, always seeking knowledge and wisdom.">
+                <div class="details">Dongtae: A scholar seeking knowledge.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_d077dd21.jpg" alt="Character 9" loading="lazy" onclick="openLightbox(this)" data-detail="Lee is a rogue with unmatched agility and stealth.">
+                <div class="details">Lee: A rogue with unmatched stealth.</div>
+            </div>
+    
+            <div class="character">
+                <img src="WhatsApp Image 2024-10-10 at 13.33.12_e066f159.jpg" alt="Character 10" loading="lazy" onclick="openLightbox(this)" data-detail="First Hunter is a master of disguise, blending into any environment.">
+                <div class="details">First Hunter: A master of disguise.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-details" id="lightbox-details"></div>
+    </div>
+    
+  <!-- Carousel Section -->
+<section id="manhwa-carousel">
+    <h2>Featured Supernatural Manhwas</h2>
+    <div class="carousel">
+        <!-- Carousel items -->
+        <div class="carousel-item" onclick="openLightbox(this)" data-detail="Supernatural manhwa is a sub-genre of fantasy manhwa and covers tales from towers to seas. If you are bored of scrolling the same action and romance manhwas, it’s time to explore the fantasy genre finally. Moreover, the supernatural webtoon offers a taste of the mundane and the unique, immersing readers in a mystical world.">
+            <img src="WhatsApp Image 2024-10-10 at 13.33.12_408486ad.jpg" alt="Manhwa 1">
+            <div class="carousel-text">Tower of God</div>
+        </div>
+        <div class="carousel-item" onclick="openLightbox(this)" data-detail="The Tower of God revolves around Twenty-Fifth Baam, who spends most of his early life stuck beneath the titular tower. While looking for his friend Rachel, he climbs the mysterious tower. What he will discover in his quest to find his friend is also beyond anything he could have imagined. Moreover, the more he climbs, the more difficult it gets, as each floor offers him a new obstacle that he has to overcome to keep climbing. Baam needs to succeed in all these challenges to reach the peak of the Tower eventually.">
+            <img src="WhatsApp Image 2024-10-10 at 13.33.12_cd66334a.jpg" alt="Manhwa 2">
+            <div class="carousel-text">Supernatural Manhwa</div>
+        </div>
+        <!-- Add more manhwas as needed -->
+    </div>
+</section>
+
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-details" id="lightbox-details"></div>
+</div>
+
+
+
+
+    
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please email us at <a href="mailto:info@loreolympus.com">info@loreolympus.com</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
